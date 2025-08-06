@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class SistemaEscolar {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a nota do 1º Bimestre: ");
+        double nota1 = scanner.nextDouble();
+        System.out.print("Digite a nota do 2º Bimestre: ");
+        double nota2 = scanner.nextDouble();
+        System.out.print("Digite a nota do 3º Bimestre: ");
+        double nota3 = scanner.nextDouble();
+        System.out.print("Digite a nota do 4º Bimestre: ");
+        double nota4 = scanner.nextDouble();
+        System.out.print("Digite a nota do 5º Bimestre: ");
+        double nota5 = scanner.nextDouble();
+        System.out.print("Digite a nota do 6º Bimestre: ");
+        double nota6 = scanner.nextDouble();
+        System.out.print("Digite a nota do 7º Bimestre: ");
+        double nota7 = scanner.nextDouble();
+        System.out.print("Digite a nota do 8º Bimestre: ");
+        double nota8 = scanner.nextDouble();
+
+        double media1Bimestre = (nota1 + nota2) / 2;
+        double media2Bimestre = (nota3 + nota4) / 2;
+        double media3Bimestre = (nota5 + nota6) / 2;
+        double media4Bimestre = (nota7 + nota8) / 2;
+
+        double media1Semestre = (media1Bimestre + media2Bimestre) / 2;
+        double media2Semestre = (media3Bimestre + media4Bimestre) / 2;
+
+        double mediaFinal = (media1Semestre + media2Semestre) / 2;
+
+        System.out.println("\nResultado das médias:");
+        System.out.println("1º Bimestre: " + media1Bimestre);
+        System.out.println("2º Bimestre: " + media2Bimestre);
+        System.out.println("1º Semestre: " + media1Semestre);
+        System.out.println("----------------------");
+        System.out.println("3º Bimestre: " + media3Bimestre);
+        System.out.println("4º Bimestre: " + media4Bimestre);
+        System.out.println("2º Semestre: " + media2Semestre);
+        System.out.println("----------------------");
+        System.out.println("Média Final: " + mediaFinal);
+
+        scanner.close();
+    }
+}
